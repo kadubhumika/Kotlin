@@ -1,19 +1,14 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    while (true) {
-        println("Enter Customer Name : ")
-        val name = readln()
+    val name = "Kotlin"
+    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+    // to see how IntelliJ IDEA suggests fixing it.
+    println("Hello, " + name + "!")
 
-        println("Enter amount of spoon sugar needed : ")
-        val sugarCount = readln().toInt()
-
-        makecoffee(sugarCount, name)
-    }
-}
-
-fun makecoffee(sugarCount: Int, name: String) {
-    if (sugarCount == 1) {
-        println("Make Coffee for $name with $sugarCount spoon of sugar")
-    } else {
-        println("Make Coffee for $name with $sugarCount spoons of sugar")
+    for (i in 1..5) {
+        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
+        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
+        println("i = $i")
     }
 }
